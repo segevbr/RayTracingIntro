@@ -1,5 +1,6 @@
 #ifndef VEC3_H
 #define VEC3_H
+#define SPACE ' '
 
 #include <cmath>
 #include <iostream>
