@@ -1,13 +1,13 @@
 CC=g++
 CFLAGS=-g -Wall -std=c++11
-OBJS=ppm_example.o
-TARGET=make_picture.exe
+OBJS=main.o
+TARGET=make_picture.exe 
 
 $(TARGET): $(OBJS) 
 		$(CC) $(OBJS) -o $(TARGET)
 
-ppm_example.o: ppm_example.cpp
-		$(CC) $(CFLAGS) -c ppm_example.cpp
+main.o: main.cpp vec3.h color.h
+		$(CC) $(CFLAGS) -c main.cpp
 
 clean:
 	rm -f *.o $(TARGET) image.ppm
