@@ -6,7 +6,7 @@ TARGET=make_picture.exe
 $(TARGET): $(OBJS) 
 		$(CC) $(OBJS) -o $(TARGET)
 
-main.o: main.cpp vec3.h color.h
+main.o: main.cpp vec3.h color.h ray.h
 		$(CC) $(CFLAGS) -c main.cpp
 
 clean:
