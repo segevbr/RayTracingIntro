@@ -8,7 +8,7 @@
 // Class for generic hittable object in the scene
 class hittable_list : public hittable {
     public:
-        std::vector<shared_ptr<hittable>> object>;
+        std::vector<shared_ptr<hittable>> objects;
 
         // Constructors
         hittable_list() {}

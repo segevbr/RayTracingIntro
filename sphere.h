@@ -19,9 +19,9 @@ class sphere : public hittable {
             auto c = oc.length_squared() - radius*radius;
 
             auto discriminant = h*h - a*c;
-            if (discriminant < 0) return flase;
+            if (discriminant < 0) return false;
 
-            auto sqrtd = std:sqrt(discriminant);
+            auto sqrtd = std::sqrt(discriminant);
 
             // Find the nearest root that lies in the acceptable range.
             auto root = (h - sqrtd) / a;    // Trying the first root.
