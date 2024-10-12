@@ -2,8 +2,6 @@
 #define VEC3_H
 #define SPACE ' '
 
-#include <cmath>
-#include <iostream>
 
 class vec3 {
     public:

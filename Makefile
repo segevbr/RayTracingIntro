@@ -2,11 +2,12 @@ CC=g++
 CFLAGS=-g -Wall -std=c++11
 OBJS=main.o
 TARGET=make_picture.exe 
+HEADERS=vec3.h color.h ray.h hittable.h sphere.h hittable_list.h rtweekend.h
 
 $(TARGET): $(OBJS) 
 		$(CC) $(OBJS) -o $(TARGET)
 
-main.o: main.cpp vec3.h color.h ray.h hittable.h sphere.h hittable_list.h
+main.o: main.cpp $(HEADERS)
 		$(CC) $(CFLAGS) -c main.cpp
 
 clean:
