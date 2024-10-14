@@ -20,7 +20,7 @@ void write_color(std::ostream& out, const color& pixel_color) {
     int bbyte = int(256 * intensity.clmap(b)); 
 
     // Write out the pixel color components
-    out << rbyte << SPACE << gbyte << SPACE << bbyte << '\n';
+    out << rbyte << ' ' << gbyte << ' ' << bbyte << '\n';
 }
 
 #endif 
